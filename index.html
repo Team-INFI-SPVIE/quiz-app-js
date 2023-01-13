@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quizz</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script defer src="js/readFile.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <h3>
+          Bienvenue, Pour commencer un quiz, veuillez sélectionner un fichier
+          excel contenant les questionnaire à l'aide du bouton ci-dessous:
+        </h3>
+        <label class="btn-label" for="fileUpload">Choisir un fichier</label>
+        <input type="file" id="fileUpload" accept=".xls,.xlsx" hidden />
+      </div>
+    </div>
+  </body>
+</html>
