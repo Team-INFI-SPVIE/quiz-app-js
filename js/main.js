@@ -1,5 +1,9 @@
 let quizData = JSON.parse(localStorage.getItem("quizData"));
 
+if (!quizData) {
+  window.location = "index.html";
+}
+
 const quiz = document.getElementById("quiz");
 const answerEls = document.querySelectorAll(".answer");
 const questionEl = document.getElementById("question");
